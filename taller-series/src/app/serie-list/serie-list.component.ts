@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { SerieService } from '../serie.service';
 import { Serie } from '../serie';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-serie-list',
   templateUrl: './serie-list.component.html',
-  styleUrls: ['./serie-list.component.css']
+  styleUrls: ['./serie-list.component.css'],
+  imports: [CommonModule] 
 })
 export class SerieListComponent implements OnInit {
   series: Serie[] = [];

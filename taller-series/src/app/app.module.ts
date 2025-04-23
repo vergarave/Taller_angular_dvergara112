@@ -6,15 +6,15 @@ import { AppComponent } from './app.component';
 import { SerieListComponent } from './serie-list/serie-list.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SerieListComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
-  ],
+declarations: [
+  AppComponent
+],
+imports: [
+  BrowserModule,
+  AppRoutingModule,
+  HttpClientModule,
+  SerieListComponent
+],
   providers: [],
   bootstrap: [AppComponent]
 })
